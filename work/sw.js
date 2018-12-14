@@ -1,8 +1,8 @@
 // version: I'm nearly finished the codelab woo!
 
 self.addEventListener("fetch", function(event) {
-  if (event.request.url == "https://dragon-server.appspot.com") {
-    console.info("responding to dragon server fetch with Service Worker! 🤓");
+  if (event.request.url == "https://dragon-server.appspot.com/") {
+    console.info("responding to dragon-server fetch with Service Worker! 🤓");
     event.respondWith(
       fetch(event.request).catch(function(e) {
         let out = { Gold: 1, Size: -1, Actions: [] };
