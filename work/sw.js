@@ -1,3 +1,5 @@
+// version: I'm nearly finished the codelab woo!
+
 self.addEventListener("fetch", function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
